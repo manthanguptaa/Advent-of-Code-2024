@@ -23,8 +23,8 @@ func readInput() ([]int, []int) {
 	defer fi.Close()
 
 	scanner := bufio.NewScanner(fi)
-	left_list := make([]int, 0, 50)
-	right_list := make([]int, 0, 50)
+	left_list := make([]int, 0, 1000)
+	right_list := make([]int, 0, 1000)
 	for scanner.Scan() {
 		line := scanner.Text()
 		nums := strings.Fields(line)
